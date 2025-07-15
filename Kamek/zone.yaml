@@ -1,0 +1,26 @@
+---
+
+source_files: [../src/zone.S]
+hooks:
+  - name: InitializeNextIDto1           #by RoadrunnerWMC
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x800837c0
+    target_func: 'InitializeNextIDto1'
+
+  - name: SkipCreateBgBufferCall           #by RoadrunnerWMC
+    type: patch
+    addr_pal: 0x800838c4
+    data: '480001b0'
+
+  - name: HardcodedEmptyTile           #by RoadrunnerWMC
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x800776b8
+    target_func: 'HardcodedEmptyTile'
+
+  - name: SomeTileGodFix                #by RoadrunnerWMC (why tf do you call this sprite like this???)
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x800778c4
+    target_func: 'SomeTileGodFix'
