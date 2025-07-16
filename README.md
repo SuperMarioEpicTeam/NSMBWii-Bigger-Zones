@@ -19,6 +19,7 @@ This patch is about fixing this game behaviour.
 	getBlockIDforPosition__12TilemapClassFiib = 0x80083f90;
 	CreateBgBuffer__12TilemapClassFi = 0x800837d0;
 	DoneWithInitializeNextIDto1 = 0x800837c4;
+	getBgUnit = 0x80081850;
 
 - Enjoy ^^
 
