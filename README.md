@@ -13,11 +13,11 @@ This patch is about fixing this game behaviour.
 - Install "zone.S" in your "Kamek/src" folder
 - Add the following symbols in your "kamek_pal.x": 
 
+	ContinueFromSomeTileGodFix = 0x800778c8;
 	HardcodedEmptyTile_Return = 0x800776c8;
 	ContinueFromHardcodedEmptyTile = 0x800776bc;
 	getBlockIDforPosition__12TilemapClassFiib = 0x80083f90;
 	CreateBgBuffer__12TilemapClassFi = 0x800837d0;
-	ContinueFromSomeTileGodFix = 0x800778c4;
 	DoneWithInitializeNextIDto1 = 0x800837c4;
 
 - Enjoy ^^
