@@ -31,7 +31,7 @@ HardcodedEmptyTile_Zero:
 .extern getBlockIDforPosition__12TilemapClassFiib			#80083f90
 .extern CreateBgBuffer__12TilemapClassFi					#800837d0
 .extern getPointerToTile__12TilemapClassFiiPUib
-.extern ContinueFromSomeTileGodFix							#800778c4
+.extern ContinueFromSomeTileGodFix							#800778c8
 
 .global SomeTileGodFix
 SomeTileGodFix:
